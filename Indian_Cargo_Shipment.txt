@@ -1,0 +1,36 @@
+--Create Table--
+
+create table Branch_Details
+(
+Client_ID int not null,
+Branch_Location varchar(20),
+Number_of_Employee varchar(20),
+Branch_Contact varchar(20),
+Branch_Address varchar(50),
+Branch_Opening_Date varchar(30),
+
+Primary key(Client_Id))
+
+
+--Insert Data--
+
+INSERT [Branch_Details] ([Client_ID], [Branch_Location], [Number_of_Employee], [Branch_Contact], [Branch_Address],[Branch_Opening_Date]) VALUES ('101','Mumbai', 50 ,8085522630,'JNPT Port,Mumbai','10 Jan 2010')
+INSERT [Branch_Details] ([Client_ID], [Branch_Location], [Number_of_Employee], [Branch_Contact], [Branch_Address],[Branch_Opening_Date]) VALUES ('103','Kerala', 48 ,8986231949,'Cochin Port, Kerala','15 August 2014')
+INSERT [Branch_Details] ([Client_ID], [Branch_Location], [Number_of_Employee], [Branch_Contact], [Branch_Address],[Branch_Opening_Date]) VALUES ('104','Gujrat', 52 ,9685754110,'Kandla Port, Gujrat','10 September 2015')
+INSERT [Branch_Details] ([Client_ID], [Branch_Location], [Number_of_Employee], [Branch_Contact], [Branch_Address],[Branch_Opening_Date]) VALUES ('105','Hyderabad', 40 ,7764024315,'Banjara Hills, Hyderabad','12 Feb 2018')
+INSERT [Branch_Details] ([Client_ID], [Branch_Location], [Number_of_Employee], [Branch_Contact], [Branch_Address],[Branch_Opening_Date]) VALUES ('106','Delhi', 45 ,8292436909,'Rajiv Chauk, Delhi','22 July 2020')
+INSERT [Branch_Details] ([Client_ID], [Branch_Location], [Number_of_Employee], [Branch_Contact], [Branch_Address],[Branch_Opening_Date]) VALUES ('107','Kolkata', 43 ,8987146434,'Kolkata Port, West Bengal','29 March 2021')
+INSERT [Branch_Details] ([Client_ID], [Branch_Location], [Number_of_Employee], [Branch_Contact], [Branch_Address],[Branch_Opening_Date]) VALUES ('108','Bhopal', 38 ,7898654301,'Ayodhya Bypass, Bhopal','4 April 2021')
+INSERT [Branch_Details] ([Client_ID], [Branch_Location], [Number_of_Employee], [Branch_Contact], [Branch_Address],[Branch_Opening_Date]) VALUES ('109','Patna', 37 ,2244546760,'Boring Road , Patna','29 May 2021')
+INSERT [Branch_Details] ([Client_ID], [Branch_Location], [Number_of_Employee], [Branch_Contact], [Branch_Address],[Branch_Opening_Date]) VALUES ('110','Gurgaon', 22 ,9887678534,'Udyog Vihar, Gurgaon','29 March 2022')
+INSERT [Branch_Details] ([Client_ID], [Branch_Location], [Number_of_Employee], [Branch_Contact], [Branch_Address],[Branch_Opening_Date]) VALUES ('102','Odisha', 32 ,9887786534,'Pradip Port, Odisha','29 April 2022')
+
+
+select * from Branch_Details
+
+--update Command--
+
+update Branch_Details set Number_of_Employee = 55
+where Client_ID = 101
+
+
